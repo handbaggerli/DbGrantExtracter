@@ -1,0 +1,83 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'D:\GitRepos\DbGrantExtracter\GuiBuilder\DbGrantExtracter\logindialog.ui'
+#
+# Created by: PyQt5 UI code generator 5.6
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+import resources
+class Ui_LoginDialog(object):
+    def setupUi(self, LoginDialog):
+        LoginDialog.setObjectName("LoginDialog")
+        LoginDialog.setWindowModality(QtCore.Qt.ApplicationModal)
+        LoginDialog.resize(301, 127)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(LoginDialog.sizePolicy().hasHeightForWidth())
+        LoginDialog.setSizePolicy(sizePolicy)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/icons/icons/network-connect-2.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        LoginDialog.setWindowIcon(icon)
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(LoginDialog)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.label = QtWidgets.QLabel(LoginDialog)
+        self.label.setObjectName("label")
+        self.verticalLayout.addWidget(self.label)
+        self.label_2 = QtWidgets.QLabel(LoginDialog)
+        self.label_2.setObjectName("label_2")
+        self.verticalLayout.addWidget(self.label_2)
+        self.label_3 = QtWidgets.QLabel(LoginDialog)
+        self.label_3.setObjectName("label_3")
+        self.verticalLayout.addWidget(self.label_3)
+        self.horizontalLayout.addLayout(self.verticalLayout)
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.lineEdit_Username = QtWidgets.QLineEdit(LoginDialog)
+        self.lineEdit_Username.setObjectName("lineEdit_Username")
+        self.verticalLayout_2.addWidget(self.lineEdit_Username)
+        self.lineEdit_Password = QtWidgets.QLineEdit(LoginDialog)
+        self.lineEdit_Password.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.lineEdit_Password.setObjectName("lineEdit_Password")
+        self.verticalLayout_2.addWidget(self.lineEdit_Password)
+        self.lineEdit_Connection = QtWidgets.QLineEdit(LoginDialog)
+        self.lineEdit_Connection.setObjectName("lineEdit_Connection")
+        self.verticalLayout_2.addWidget(self.lineEdit_Connection)
+        self.horizontalLayout.addLayout(self.verticalLayout_2)
+        self.verticalLayout_3.addLayout(self.horizontalLayout)
+        self.buttonBox = QtWidgets.QDialogButtonBox(LoginDialog)
+        self.buttonBox.setEnabled(True)
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
+        self.buttonBox.setCenterButtons(False)
+        self.buttonBox.setObjectName("buttonBox")
+        self.verticalLayout_3.addWidget(self.buttonBox)
+
+        self.retranslateUi(LoginDialog)
+        self.buttonBox.accepted.connect(LoginDialog.accept)
+        self.buttonBox.rejected.connect(LoginDialog.reject)
+        QtCore.QMetaObject.connectSlotsByName(LoginDialog)
+
+    def retranslateUi(self, LoginDialog):
+        _translate = QtCore.QCoreApplication.translate
+        LoginDialog.setWindowTitle(_translate("LoginDialog", "DB Login"))
+        self.label.setText(_translate("LoginDialog", "Username:"))
+        self.label_2.setText(_translate("LoginDialog", "Password:"))
+        self.label_3.setText(_translate("LoginDialog", "DB Connection:"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    LoginDialog = QtWidgets.QDialog()
+    ui = Ui_LoginDialog()
+    ui.setupUi(LoginDialog)
+    LoginDialog.show()
+    sys.exit(app.exec_())
+

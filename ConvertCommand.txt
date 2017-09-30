@@ -1,0 +1,9 @@
+Convert GUI from QT Creator to Python
+in cmd:
+in: C:\ProgramData\Anaconda3\Library\bin
+
+pyuic5.bat -x D:\GitRepos\DbGrantExtracter\GuiBuilder\DbGrantExtracter\mainwindow.ui -o  D:\GitRepos\DbGrantExtracter\Python\mainwindow_convert.txt
+pyuic5.bat -x D:\GitRepos\DbGrantExtracter\GuiBuilder\DbGrantExtracter\logindialog.ui -o  D:\GitRepos\DbGrantExtracter\Python\logindialog_convert.txt
+
+pyrcc5 -o D:\GitRepos\DbGrantExtracter\Python\resources.py D:\GitRepos\DbGrantExtracter\GuiBuilder\DbGrantExtracter\resources.qrc 
+

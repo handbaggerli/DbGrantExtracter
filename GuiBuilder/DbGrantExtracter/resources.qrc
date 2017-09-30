@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/archive-extract-2.ico</file>
+        <file>icons/network-connect-2.ico</file>
+        <file>icons/system-search-3.ico</file>
+        <file>icons/application-exit-4.ico</file>
+        <file>icons/document-save-2.ico</file>
+    </qresource>
+</RCC>
